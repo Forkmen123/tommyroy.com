@@ -1,21 +1,39 @@
+:root {
+   /* ----------------- fonts --------------- */
+	--font-family-normal: "Playfair Display", serif;
+	--font-family-stylish: "Praise", serif;
+
+    /* ------------------ couleurs ---------------- */
+    --color-light-beige: #F7F2E4;
+	--color-mauve-dark: #341830;
+	--color-mauve-light: #333;
+
+	--background-color: #F7F2E4;
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+}
+
 body {
-    background-color: #F7F2E4 !important;
-    font-family: "Playfair Display", serif !important;
+    background-color: var(--background-color) !important;
+    font-family: var(--font-family-normal) !important;
     font-optical-sizing: auto !important;
     font-style: normal !important;
     font-size: 1rem !important;
-}
-
-
-html,
-body {
     overflow-x: hidden !important;
     max-width: 100% !important;
 }
 
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    background-color: var(--background-color);
+}
+
 /* ----------- texte --------------  */
 .praise-font {
-    font-family: "Praise" !important;
+    font-family: var(--font-family-stylish) !important;
     font-weight: 400 !important;
     font-style: normal !important;
 }
@@ -25,17 +43,17 @@ body {
 }
 
 .my-magenta {
-    color: #341830 !important;
+    color: var(--color-mauve-dark) !important;
 }
 
 /* ------------- Liens -------------- */
 .links-mauve {
-    color: #341830 !important;
+    color: var(--color-mauve-dark) !important;
     font-style: italic !important;
 }
 
 .links-white {
-    color: rgb(247, 242, 228) !important;
+    color:  var(--color-light-beige) !important;
     font-style: normal !important;
     text-decoration: none !important;
 }
@@ -57,7 +75,7 @@ a:hover {
 
 /* ------------- Icons ---------- */
 i {
-    color: #341830 !important;
+    color: var(--color-mauve-dark) !important;
 }
 
 .my-chevron-123 {
@@ -78,6 +96,9 @@ i {
         font-size: 1rem;
     }
 }
+
+
+/* --------- autre ------------- */
 
 .elfsight-app-5e059b5c-451b-4804-ba57-5a7f0413227a {
     margin: 0 auto !important;
