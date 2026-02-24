@@ -5,7 +5,14 @@ layout: base.njk
 <div class="container py-5">
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary mb-2">{{ tags[0] + ", " + tags[1] + ", " + tags[2] }}</span>
+            <span class="badge bg-secondary mb-2">{{ tags[0] }}</span>
+            <span class="badge bg-secondary mb-2">{{ tags[1] }}</span>
+            <span class="badge bg-secondary mb-2">{{ tags[2] }}</span>
+
+            {% for i in range(0, tags | length)in tags %}
+                <span class="badge bg-secondary mb-2">{{ tags[i] }}</span>
+            {% endfor %}
+
             <h1 class="display-4 fw-bold" style="color: #341830;">{{ title }}</h1>
             <p class="text-muted fst-italic">{{ date | readableDate }}</p>
             <hr class="my-4" style="width: 50px; margin: 0 auto; border-top: 3px solid #341830;">

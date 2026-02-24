@@ -23,3 +23,9 @@
 .article-body .math {
     font-size: 22px;
 }
+
+
+
+code {
+    background-color: red !important;
+}
