@@ -42,14 +42,29 @@
 />
   </head>
 
+    <div class="container d-flex d-md-none  justify-content-center pt-3"> 
+      <div class="row"> 
+        <a
+                class="nav-link my-magenta opacity-links links-mauve"
+                href="/"
+              >
+                <div class="button2">
+                  <p>
+                    <i class="fa-solid fa-house" style="font-size: 1.3rem"></i>
+                  </p>
+                </div>
+              </a>
+      </div>
+    </div>
+      <div class="container">
   <body class="m-0">
     <nav class="navbar">
-      <div class="container">
+        
         <div class="navbar-collapse" id="navbarNav">
           <ul
             class="navbar-nav d-flex flex-row mx-auto mx-lg-0 justify-content-center justify-content-lg-end text-center text-lg-start w-100"
           >
-            <li class="nav-item me-4">
+            <li class="nav-item me-4 d-none d-md-block">
               <a
                 class="nav-link my-magenta opacity-links links-mauve"
                 href="/"
@@ -109,9 +124,12 @@
     <main class="container">
 <!-- Title Row -->
 <div class="row mb-3 mb-md-4 text-center justify-content-center fade-in">
-    <div class="col-12 d1">
+    <div class="col-12 d1 d-none d-md-block">
             Tommy Roy
-        </div>
+    </div>
+    <div class="col-12 d2 d-block d-md-none">
+            Tommy Roy
+    </div>
 </div>
 
 <!-- Content Row -->
@@ -136,7 +154,7 @@
 
     <!-- Text Column -->
     <div class="col-12 col-md-7 col-lg-6 p-3 p-md-4">
-        <p class="fade-in text-center text-md-start lh-base fs-5">
+        <p class="fade-in text-center text-md-start">
             Bienvenue sur mon site internet ! Il s’agit du meilleur endroit pour me contacter ainsi que pour
             découvrir mes œuvres.
             Vous y trouverez une variété de sujets, allant des natures mortes aux paysages, en passant par les
@@ -153,7 +171,7 @@
 </div>
 
 <!-- Chevron -->
-<div class="row" style="margin-bottom: 5rem">
+<div class="row d-none d-md-block" style="margin-bottom: 5rem">
     <div class="col text-center">
         <a href="#section1">
             <i class="fa-solid fa-chevron-down opacity-links my-chevron-animation my-chevron-123"
@@ -163,14 +181,14 @@
 </div>
 
 <!-- Titre -->
-<div class="row fade-in text-center justify-content-center">
+<div class="row fade-in text-center justify-content-center d-none d-md-block">
     <div class="col-12 d2">
         Nouveautés
     </div>
 </div>
 
 <!-- Widget Elfsight -->
-<div class="d-flex justify-content-center position-relative mt-4 px-2 px-md-3 rounded fade-in">
+<div class="d-none d-md-flex justify-content-center position-relative mt-4 px-2 px-md-3 rounded fade-in">
     <div class="col-12 col-lg-10 col-xl-8 text-center" id="section1">
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-5e059b5c-451b-4804-ba57-5a7f0413227a" data-elfsight-app-lazy></div>
@@ -196,7 +214,7 @@
         <ul
           class="nav mb-3 mb-md-0 justify-content-center justify-content-md-start flex-wrap"
         >
-          <li class="nav-item me-2 me-md-4 mb-2 mb-md-0">
+          <li class="nav-item me-2 me-md-4 mb-2 mb-md-0 d-none d-md-block">
             <a
               class="nav-link my-magenta opacity-links links-mauve p-1"
               href="/"
@@ -214,7 +232,7 @@
               href="/about/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">À propos</p>
+                <p class="mb-0">À propos</p>
               </div>
             </a>
           </li>
@@ -224,7 +242,7 @@
               href="/portfolio/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">Portfolio</p>
+                <p class="mb-0">Portfolio</p>
               </div>
             </a>
           </li>
@@ -234,7 +252,7 @@
               href="/reflexions/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">Réflexions</p>
+                <p class="mb-0">Réflexions</p>
               </div>
             </a>
           </li>
@@ -244,7 +262,7 @@
               href="/contact/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">Contact</p>
+                <p class="mb-0">Contact</p>
               </div>
             </a>
           </li>
