@@ -77,6 +77,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/script");
   eleventyConfig.addPassthroughCopy("src/lightbox2-2.11.4");
+  eleventyConfig.addPassthroughCopy({ "CNAME": "CNAME" });
 
   // ---------------- ignore files ----------------
   eleventyConfig.ignores.add("_site");
