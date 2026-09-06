@@ -278,5 +278,47 @@
         "archived": false,
         "price": "100 $",
         "status": "Indisponible"
+    },
+    {
+        "title": "Sans Titre 1",
+        "image": "/images/peintures/sans-titre1.jpg",
+        "thumbnail": "/images/peintures/sans-titre1.jpg",
+        "category": "painting",
+        "sujet": "paysage",
+        "medium": "Huile sur panneau",
+        "size": " ",
+        "description": "Peinture faite en plein air.",
+        "date": "2025-07-22",
+        "archived": false,
+        "price": "200 $",
+        "status": "Disponible"
+    },
+    {
+        "title": "Sans Titre 2",
+        "image": "/images/peintures/sans-titre2.jpg",
+        "thumbnail": "/images/peintures/sans-titre2.jpg",
+        "category": "painting",
+        "sujet": "paysage",
+        "medium": "Huile sur panneau",
+        "size": " ",
+        "description": "Peinture faite en plein air.",
+        "date": "2025-09-05",
+        "archived": false,
+        "price": "200 $",
+        "status": "Disponible"
+    },
+    {
+        "title": "Un trio de terres tourbées",
+        "image": "/images/peintures/trio-de-terres-tourbées.jpg",
+        "thumbnail": "/images/peintures/trio-de-terres-tourbées.jpg",
+        "category": "painting",
+        "sujet": "paysage",
+        "medium": "Huile sur toile",
+        "size": "48\"x24\"",
+        "description": "Peinture initialement tirée d'un champ à Plessisville.",
+        "date": "2025-09-12",
+        "archived": false,
+        "price": "750 $",
+        "status": "Disponible"
     }
 ]
