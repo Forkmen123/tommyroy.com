@@ -42,14 +42,29 @@
 />
   </head>
 
+    <div class="container d-flex d-md-none  justify-content-center pt-3"> 
+      <div class="row"> 
+        <a
+                class="nav-link my-magenta opacity-links links-mauve"
+                href="/"
+              >
+                <div class="button2">
+                  <p>
+                    <i class="fa-solid fa-house" style="font-size: 1.3rem"></i>
+                  </p>
+                </div>
+              </a>
+      </div>
+    </div>
+      <div class="container">
   <body class="m-0">
     <nav class="navbar">
-      <div class="container">
+        
         <div class="navbar-collapse" id="navbarNav">
           <ul
             class="navbar-nav d-flex flex-row mx-auto mx-lg-0 justify-content-center justify-content-lg-end text-center text-lg-start w-100"
           >
-            <li class="nav-item me-4">
+            <li class="nav-item me-4 d-none d-md-block">
               <a
                 class="nav-link my-magenta opacity-links links-mauve"
                 href="/"
@@ -107,10 +122,10 @@
     </nav>
 
     <main class="container">
-<div class="row mb-3 mt-5 mb-md-4 text-center justify-content-center fade-in">
+<div class="row mt-md-5 mb-md-3 text-center justify-content-center fade-in">
     <div class="col-12">
         <div class="d2">
-                Me Contacter
+             Contact
             </div>
     </div>
 </div>
@@ -118,22 +133,22 @@
 <div class="row align-items-center justify-content-center">
 
     <!-- Text Column -->
-    <div class="col-12 col-md-7 col-lg-6 p-3 p-md-4">
-        <p class="texte fade-in text-start">
+    <div class="col-12 col-md-7 col-lg-6 p-4 p-md-4">
+        <p class="fade-in text-start">
                 Salut !
             </p>
-        <p class="texte fade-in text-start">
+        <p class="fade-in text-start">
                 Je m’appelle Tommy Roy et je serai heureux d’échanger avec vous concernant la faisabilité d’un
                 projet, la disponibilité d’une œuvre ou toute autre demande.
             </p>
 
-        <p class="texte lh-lg">
+        <p>
                 Pour me contacter, veuillez remplir ce <a href="#myForm" style="color: #341830; font-style: italic;"
                     class="opacity-links">formulaire</a> ou m’écrire directement par courriel. Vous pouvez également
                 me retrouver sur les différents réseaux sociaux. Je me ferai
                 un plaisir de partager avec vous ma passion pour l’art&nbsp;!
             </p>
-        <p class="texte fs-5 fw-bold lh-lg">
+        <p class="fw-bold">
                 Intéressé par l'achat d'une œuvre originale ou par une toile personnalisée&nbsp;? Ici, c'est le bon
                 endroit
             </p>
@@ -153,7 +168,7 @@
         </div>
     </div>
     <!-- Image Column -->
-    <div class="col-12 col-md-4 p-3 p-md-5 text-center d-flex align-items-center justify-content-center">
+    <div class="col-12 col-md-4 p-3 p-md-5 text-center d-flex align-items-center justify-content-center d-none d-md-block">
         <img class="img-fluid rounded shadow slide-in-left mt-4 mt-md-0" style="rotate: 5deg; max-width: 10rem;"
                 src="/images/autre/photo-1-carré.jpg" alt="photographie de Tommy Roy avec une casquette">
     </div>
@@ -165,7 +180,7 @@
 <!-- contact form  -->
 
 <div class="container">
-<div class="row mb-3 mb-md-4 praise-font text-center justify-content-center fade-in">
+<div class="row mb-3 mb-md-4 praise-font text-center justify-content-center fade-in d-none d-md-block">
     <div class="col-12">
         <div class="d2">
                 Envoyer un message
@@ -174,7 +189,7 @@
 </div>
 <form id="myForm" onsubmit="submitForm(event)" method="post"
         action="https://forms.un-static.com/forms/980fdef8bd25a4bf9a0c14e4492358d4517bd25c"
-        class="px-2 px-sm-3 px-md-4 px-lg-5">
+        >
 
     <div class="px-1 px-sm-2 px-md-3 px-lg-5">
         <!-- Nom -->
@@ -210,7 +225,7 @@
             <div class="row">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-6">
                     <input type="text" class="form-control shadow" id="subject" name="subject"
-                            placeholder="Peinture personnalisée, œuvre originale, etc." required>
+                            placeholder="..." required>
                 </div>
             </div>
         </div>
@@ -257,7 +272,7 @@
         <ul
           class="nav mb-3 mb-md-0 justify-content-center justify-content-md-start flex-wrap"
         >
-          <li class="nav-item me-2 me-md-4 mb-2 mb-md-0">
+          <li class="nav-item me-2 me-md-4 mb-2 mb-md-0 d-none d-md-block">
             <a
               class="nav-link my-magenta opacity-links links-mauve p-1"
               href="/"
@@ -275,7 +290,7 @@
               href="/about/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">À propos</p>
+                <p class="mb-0">À propos</p>
               </div>
             </a>
           </li>
@@ -285,7 +300,7 @@
               href="/portfolio/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">Portfolio</p>
+                <p class="mb-0">Portfolio</p>
               </div>
             </a>
           </li>
@@ -295,7 +310,7 @@
               href="/reflexions/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">Réflexions</p>
+                <p class="mb-0">Réflexions</p>
               </div>
             </a>
           </li>
@@ -305,7 +320,7 @@
               href="/contact/"
             >
               <div class="button2">
-                <p class="mb-0" style="font-size: 1.3rem">Contact</p>
+                <p class="mb-0">Contact</p>
               </div>
             </a>
           </li>

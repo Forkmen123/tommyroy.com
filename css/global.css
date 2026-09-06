@@ -53,7 +53,15 @@ h5 {
 
 p {
   font-size: 1.25rem;
+  line-height: 1.6;
   font-family: var(--font-serif);
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1rem; /* 16px sur mobile */
+    line-height: 1.55;
+  }
 }
 
 hr {
