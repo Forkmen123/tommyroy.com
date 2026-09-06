@@ -2,21 +2,21 @@
 layout: base.njk
 ---
 
-<div class="row justify-content-center">
+<div class="row justify-content-center px-2">
     {% if noTOC != true %}
-        <div class="col-3" style="overflow-y: auto; 
+        <div class="col-3 d-none d-md-block" style="overflow-y: auto; 
                                   position: sticky; 
                                   top: 2rem; 
                                   max-height: calc(100vh); 
                                   align-self: start;
                                   transition: all 3.3s ease;">
             <div>
-                <h4 style="margin-bottom: 1.5rem; margin-top: 10rem">Contenu</h4>
+                <h4 style="margin-bottom: 1.5rem; margin-top: 10rem" >Contenu</h4>
                 {{ content | getTOC | safe }}
             </div>
 
             {% if (related | length) != 0 %}
-                <div>
+                <div class="d-none d-md-block">
                     <h4 style="margin-bottom: 1.5rem;">Articles liés</h4>
                     {% for post in related %}
                         <div>
@@ -33,7 +33,7 @@ layout: base.njk
         </div>
     {% endif %}
 
-    <div class="col" style="max-width: 700px">
+    <div class="col mx-3" style="max-width: 700px">
         <div class="text-center">
             <h1>{{ title }}</h1>
             <p class="fst-italic"
@@ -41,7 +41,7 @@ layout: base.njk
                 {{ date | readableDate }}
             </p>
             {% for tag in tags %}
-                <span class="badge bg-secondary" style="background-color: var(--color-mauve-med) !important; opacity: 0.8;">{{ tag }}</span>
+                <span class="badge bg-secondary" style="background-color: var(--color-mauve-med) !important;">{{ tag }}</span>
             {% endfor %}
             <hr class="my-4"
                 style="width: 50px;

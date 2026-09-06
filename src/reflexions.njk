@@ -4,25 +4,24 @@ title: Réflexions - Tommy Roy
 ---
 
 <div class="row text-center">
-    <div class="col-12 mb-5">
+    <div class="col-12 mb-5 mt-md-5">
         <div class="d2">Réflexions</div>
-        {# <p>Réflexions</p> #}
     </div>
 </div>
 
-<div class="row justify-content-center">
+<div class="row justify-content-center fade-in">
     <div class="col-lg-8">
         <div>
 
             {% for post in collections.reflexionsPosts %}
-                <a href="{{ post.url }}" class="list-group-item list-group-item-action p-4 border-0 border-bottom">
+                <a href="{{ post.url }}" class="list-group-item list-group-item-action py-4 px-2 border-0 border-bottom">
                     <div class="d-flex w-100 justify-content-between align-items-center mb-2">
-                        <h2 class="h4 mb-0" style="font-style: normal;">{{ post.data.title }}</h2>
-                        <small class="text-muted text-nowrap ms-3">
+                        <h3 class="h3 mb-0 fst-normal fw-bold">{{ post.data.title }}</h3>
+                        <small class="text-nowrap d-none d-md-block">
                             {{ post.date | readableDate }}
                         </small>
                     </div>
-                    <p class="mb-1 text-secondary">
+                    <p class="mb-1 ">
                         {% if post.data.description %}
                             {{ post.data.description }}
                         {% else %}
@@ -34,14 +33,13 @@ title: Réflexions - Tommy Roy
                         {% for tag in post.data.tags %}
                             {% if tag != "posts" %}
                                 <span class="badge bg-secondary" 
-                                      style="background-color: var(--color-mauve-med) !important; 
-                                      opacity: 0.8;">{{ tag }}</span>
+                                      style="background-color: var(--color-mauve-med) !important;">{{ tag }}</span>
                             {% endif %}
                         {% endfor %}
                     </div>
                 </a>
             {% else %}
-                <div class="p-4 text-center text-muted">
+                <div class="p-4 text-center">
                     <p>Aucun article publié pour le moment.</p>
                 </div>
             {% endfor %}
