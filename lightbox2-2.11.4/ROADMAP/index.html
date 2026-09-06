@@ -1,0 +1,81 @@
+<h1 id="roadmap" tabindex="-1">Roadmap</h1>
+<h2 id="v2-x-maintenance-mode" tabindex="-1">v2.x - Maintenance Mode</h2>
+<p>No new features are being worked on for v2.x.</p>
+<h2 id="v3-0-brainstorming-no-timeline" tabindex="-1">v3.0 - Brainstorming, no timeline</h2>
+<h3 id="focus" tabindex="-1">Focus</h3>
+<ul>
+<li>Nailing the mobile experience</li>
+<li>Fluid iteractions across devices</li>
+<li>Maintaining ease of setup</li>
+</ul>
+<h3 id="not-planned-for-v3-0" tabindex="-1">Not planned for v3.0</h3>
+<p>The goal of this script from it's beginnings till today is to to provide a better <em>image viewing experience</em>.</p>
+<ul>
+<li><strong>HTML or video content:</strong>  If you need to show html or video content, I recommend googling for an alternative script as there are many options.</li>
+<li><strong>Social sharing buttons</strong></li>
+</ul>
+<h3 id="image-support" tabindex="-1">Image support</h3>
+<ul>
+<li><strong><code>srcset</code> and <code>&lt;picture&gt;</code></strong>: Investigate</li>
+<li><strong>EXIF rotation data</strong>: Investigate</li>
+<li><strong>File formats</strong>: All formats supported by the browser utilized? Test vector formats, e.g. SVG. Test animated, e.g. GIF.</li>
+</ul>
+<h3 id="interactions" tabindex="-1">Interactions</h3>
+<ul>
+<li><strong>Swipe gesture</strong>: Allow swiping horizontally to navigate between images in a set. Up and down to exist.</li>
+<li><strong>Wide images on mobile</strong>: Explore cropping when height would be reduced substantially on mobile devices. Allow swiping, and maybe tilt, support to view full image. Hint at behavior by doing small horizontal slide in when opening? What does tapping do? How does horizontal swiping affect navigation in sets?</li>
+<li>If user attempts to go forward when at end of image set, animation (shake?) indicating the end or option to close Lightbox.</li>
+<li>Make sure right-click/long pressing works to access the image's context menu.</li>
+</ul>
+<h3 id="layout" tabindex="-1">Layout</h3>
+<ul>
+<li>Allow vertical centering.</li>
+<li>Update sizing on window resize.</li>
+<li>Should the dev be able to choose the position of the caption, close button, and nav controls?</li>
+<li>Optimize layout for mobile.</li>
+<li>Optimize layout for screens of varying densities.</li>
+<li>Should the close button still live in the bottom right corner?</li>
+</ul>
+<h3 id="animations" tabindex="-1">Animations</h3>
+<ul>
+<li><strong>Start/end animation</strong>: Animate towards the trigger.</li>
+<li><strong>Easing:</strong> Speed up and include bounce? Options to control?</li>
+<li><strong>Performant animations</strong>: Rewrite to use transforms exclusively.</li>
+</ul>
+<h3 id="assets" tabindex="-1">Assets</h3>
+<ul>
+<li>Use inline SVG for UI elements.</li>
+</ul>
+<h3 id="caching" tabindex="-1">Caching</h3>
+<ul>
+<li><strong>Preloading</strong>: Review if and which images should be preloaded. Options?</li>
+</ul>
+<h3 id="error-handling" tabindex="-1">Error Handling</h3>
+<ul>
+<li>What happens when an image url is incorrect?</li>
+<li>What happens when an image takes too long to load?</li>
+</ul>
+<h3 id="native-behavior-and-accessibility" tabindex="-1">Native behavior and accessibility</h3>
+<ul>
+<li><strong>Right-click support</strong>: Bring up image context menu. Allow saving and copying image.</li>
+<li>Should opening lightbox update the url? and should this url be parsed on page load to show Lightbox automatically?</li>
+<li>Review alt attributes.</li>
+<li>Review ARIA roles.</li>
+<li>Review constrast ratios.</li>
+<li>Review keyboard input and tabbing.</li>
+<li>Review click/touch target size.</li>
+<li>Test with screen reader.</li>
+</ul>
+<h3 id="api" tabindex="-1">API</h3>
+<ul>
+<li>Do not initialize automatically and allow multiple instances.</li>
+<li>Add event handlers.</li>
+<li>Allow setting options on the fly.</li>
+<li>Allow the setting of options from HTML?</li>
+<li>Evaluate preloading and caching.</li>
+<li>Allow placement inside of a specified element? Orig feature requester was dealing with iframe.</li>
+</ul>
+<h3 id="dependencies" tabindex="-1">Dependencies</h3>
+<ul>
+<li>Drop jQuery requirement.</li>
+</ul>
