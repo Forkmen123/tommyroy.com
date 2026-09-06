@@ -1,0 +1,66 @@
+---
+layout: base.njk
+---
+
+<div class="row justify-content-center">
+    {% if noTOC != true %}
+        <div class="col-3" style="overflow-y: auto; 
+                                  position: sticky; 
+                                  top: 2rem; 
+                                  max-height: calc(100vh); 
+                                  align-self: start;
+                                  transition: all 3.3s ease;">
+            <div>
+                <h4 style="margin-bottom: 1.5rem; margin-top: 10rem">Contenu</h4>
+                {{ content | getTOC | safe }}
+            </div>
+
+            {% if (related | length) != 0 %}
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Articles liés</h4>
+                    {% for post in related %}
+                        <div>
+                            <p>
+                                <a style="text-decoration: none;" href="{{ collection.url.post }}">
+                                    <a href="{{ collection.url.post }}">{{ post }}</a>
+                                    <i style="margin-left: 0.8rem; color: var(--links)" class="fas fa-arrow-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <div class="col" style="max-width: 700px">
+        <div class="text-center">
+            <h1>{{ title }}</h1>
+            <p class="fst-italic"
+               style="opacity: 0.7; color: var(--color-mauve-med)">
+                {{ date | readableDate }}
+            </p>
+            {% for tag in tags %}
+                <span class="badge bg-secondary" style="background-color: var(--color-mauve-med) !important; opacity: 0.8;">{{ tag }}</span>
+            {% endfor %}
+            <hr class="my-4"
+                style="width: 50px;
+                       margin: 0 auto;
+                       background-image: linear-gradient(
+                            to right,
+                            transparent 0%,
+                            var(--color-mauve-med) 30%,
+                            var(--color-mauve-med) 70%,
+                            transparent 100%
+                        );">
+        </div>
+
+        <div class="justify-content-center mt-5">
+            {{ content | safe }}
+        </div>
+
+        {# <div class="justify-content-center text-center" style="margin-top: 6rem">
+            <iframe src="https://tommyroy.substack.com/embed" width="480" height="150" frameborder="0" scrolling="no"></iframe>
+        </div> #}
+    </div>
+</div>

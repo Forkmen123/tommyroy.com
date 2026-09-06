@@ -1,0 +1,17 @@
+<h2 id="how-to-make-a-release" tabindex="-1">How to Make a Release</h2>
+<h3 id="build" tabindex="-1">Build</h3>
+<ul>
+<li><strong>Checkout dev branch.</strong> This will contain work queued up for the next release.</li>
+<li><strong>Update version number.</strong> Manually update version number in <code>src/lightbox.js</code> and <code>package.json</code>. Don't use <code>npm version</code>.</li>
+<li><strong>Build and merge to <code>master</code>.</strong> Run <code>grunt build</code>. Make sure you have run <code>bower install</code> ahead of this as it will pull down jQuery which is utilized in the build step. Push to <code>master</code>.</li>
+</ul>
+<h3 id="release" tabindex="-1">Release</h3>
+<ul>
+<li><strong>Create tagged release.</strong> Go to <a href="https://github.com/lokesh/lightbox2/releases">Github Releases page</a>. Draft a new release. Naming convention is <code>v2.8.1</code>. Add notes that link to PRs.</li>
+<li><strong><code>npm publish</code></strong>. No need to do anything for Bower as it is entirely based on the Github repo.</li>
+</ul>
+<h3 id="maintenance-and-docs" tabindex="-1">Maintenance and Docs</h3>
+<ul>
+<li><strong>GH clean-up.</strong> Close out issues with <code>[status] pending release</code>.</li>
+<li><strong>Lightbox Site.</strong> If there are any changes to the options, don't forget to update the <a href="http://localhost:8000/dist/#options">Lightbox Site</a>. The code lives in a separate repo, <a href="https://github.com/lokesh/lightbox2-site/">lightbox2-site</a>.</li>
+</ul>

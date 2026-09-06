@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: Réflexions - Tommy Roy
+---
+
+<div class="row text-center">
+    <div class="col-12 mb-5">
+        <div class="d2">Réflexions</div>
+        {# <p>Réflexions</p> #}
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div>
+
+            {% for post in collections.reflexionsPosts %}
+                <a href="{{ post.url }}" class="list-group-item list-group-item-action p-4 border-0 border-bottom">
+                    <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                        <h2 class="h4 mb-0" style="font-style: normal;">{{ post.data.title }}</h2>
+                        <small class="text-muted text-nowrap ms-3">
+                            {{ post.date | readableDate }}
+                        </small>
+                    </div>
+                    <p class="mb-1 text-secondary">
+                        {% if post.data.description %}
+                            {{ post.data.description }}
+                        {% else %}
+                                Lire l'article...
+                            {% endif %}
+                    </p>
+
+                    <div class="mt-2">
+                        {% for tag in post.data.tags %}
+                            {% if tag != "posts" %}
+                                <span class="badge bg-secondary" 
+                                      style="background-color: var(--color-mauve-med) !important; 
+                                      opacity: 0.8;">{{ tag }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </a>
+            {% else %}
+                <div class="p-4 text-center text-muted">
+                    <p>Aucun article publié pour le moment.</p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{# <div class="row text-center mt-5">
+    <iframe src="https://tommyroy.substack.com/embed" width="480" height="150" frameborder="0" scrolling="no"></iframe>
+</div> #}
