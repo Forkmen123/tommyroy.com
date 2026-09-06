@@ -53,13 +53,13 @@ module.exports = function (eleventyConfig) {
   // ------------ ajout de collections --------
   eleventyConfig.addCollection("recentPosts", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("src/blog/*.md")
+      .getFilteredByGlob("src/reflexions/*.md")
       .reverse()
       .slice(0, 3);
   });
 
-  eleventyConfig.addCollection("blogPosts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/*.md").reverse();
+  eleventyConfig.addCollection("reflexionsPosts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/reflexions/*.md").reverse();
   });
 
   // ----------------- ajout de filtres ----------------

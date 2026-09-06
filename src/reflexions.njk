@@ -1,12 +1,12 @@
 ---
 layout: base.njk
-title: Blog - Tommy Roy
+title: Réflexions - Tommy Roy
 ---
 
 <div class="row text-center">
     <div class="col-12 mb-5">
-        <div class="d2">Journal de Bord</div>
-        <p>Réflexions</p>
+        <div class="d2">Réflexions</div>
+        {# <p>Réflexions</p> #}
     </div>
 </div>
 
@@ -14,7 +14,7 @@ title: Blog - Tommy Roy
     <div class="col-lg-8">
         <div>
 
-            {% for post in collections.blogPosts %}
+            {% for post in collections.reflexionsPosts %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action p-4 border-0 border-bottom">
                     <div class="d-flex w-100 justify-content-between align-items-center mb-2">
                         <h2 class="h4 mb-0" style="font-style: normal;">{{ post.data.title }}</h2>
@@ -49,6 +49,6 @@ title: Blog - Tommy Roy
         </div>
     </div>
 </div>
-<div class="row text-center mt-5">
+{# <div class="row text-center mt-5">
     <iframe src="https://tommyroy.substack.com/embed" width="480" height="150" frameborder="0" scrolling="no"></iframe>
-</div>
+</div> #}
