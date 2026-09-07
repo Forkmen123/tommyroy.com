@@ -2,8 +2,8 @@
   /* ----------------- fonts --------------- */
   --font-serif: "CMU Serif", serif;
   --font-sans-serif: "Geist", sans-serif;
-  --font-display: "Praise", cursive;
-  --font-display: "CMU Serif", cursive;
+  /* --font-display: "Praise", cursive; */
+  --font-display: "CMU Serif", serif;
 
   /* ------------------ couleurs ---------------- */
   --color-light-beige: #f7f2e4;
